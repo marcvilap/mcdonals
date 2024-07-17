@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Air';
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+		src: url(./assets/fonts/Air-Regular.woff2) format('woff2');
+	}
+	@font-face {
+		font-family: 'Air';
+		font-style: normal;
+		font-weight: 700;
+		font-display: swap;
+		src: url(./assets/fonts/Air-Bold.woff2) format('woff2');
+	}
+	@font-face {
+		font-family: 'Air';
+		font-style: normal;
+		font-weight: 900;
+		font-display: swap;
+		src: url(./assets/fonts/Air-Black.woff2) format('woff2');
+	}
+	@media (max-width: 400px) {
+		html {
+			font-size: 4vw;
+		}
+	}
+	@media (min-width: 1281px) {
+		html {
+			font-size: 1.25vw;
+		}
+	}
+	@media (min-width: 1920px) {
+		html {
+			font-size: 24px;
+		}
+	}
+	html {
+		-webkit-tap-highlight-color: transparent;
+		@apply touch-manipulation bg-[#FDF3DA] text-[#004612] antialiased;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply text-balance;
+	}
+	p {
+		@apply text-pretty;
+	}
+}
+
+@layer components {
+	.revealed [class*='reveal:'] {
+		transition-duration: 1s;
+		transition-property: opacity, transform;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		will-change: opacity, transform;
+	}
+}
+
+@layer utilities {
+}
+
+@keyframes auto-1 {
+	to {
+		transform: translate3d(220%, 170%, 0);
+	}
+}
+@keyframes auto-2 {
+	to {
+		transform: translate3d(340%, 260%, 0);
+	}
+}
+@keyframes auto-3 {
+	to {
+		transform: translate3d(260%, 200%, 0);
+	}
+}
+.auto-1 {
+	animation: auto-1 4s linear infinite;
+}
+.auto-2 {
+	animation: auto-2 4s linear infinite;
+}
+.auto-3 {
+	animation: auto-3 4s linear infinite;
+}

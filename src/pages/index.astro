@@ -1,0 +1,173 @@
+---
+import { Image } from 'astro:assets'
+import Layout from '$layouts/Layout.astro'
+import Icon from '$components/Icon.astro'
+
+import imgHighway01 from '$assets/images/highway-01.webp'
+import imgHighway02 from '$assets/images/highway-02.webp'
+import imgHighway03 from '$assets/images/highway-03.webp'
+
+import imgItem01 from '$assets/images/item-01.webp'
+import imgItem02 from '$assets/images/item-02.webp'
+import imgItem03 from '$assets/images/item-03.webp'
+
+import imgCircle01 from '$assets/images/circle-01.webp'
+import imgCircle02 from '$assets/images/circle-02.webp'
+import imgCircle03 from '$assets/images/circle-03.webp'
+import imgCircle04 from '$assets/images/circle-04.webp'
+import imgCircle05 from '$assets/images/circle-05.webp'
+---
+
+<Layout>
+	<main class="overflow-hidden">
+		<Icon class="absolute left-2/3 top-12 w-64" name="wave" />
+		<div class="container relative">
+			<a class="mb-12 mt-24 inline-block w-20" href="/">
+				<Icon name="mcdonalds" />
+			</a>
+
+			<div class="reveal">
+				<h1 class="mb-6 max-w-100 text-4xl font-black uppercase reveal:translate-y-24 reveal:opacity-0 md:text-5xl">¿Hamburguesas con GPS?</h1>
+				<h2 class="mb-2 max-w-96 text-4xl leading-none reveal:translate-y-24 reveal:opacity-0 revealed:delay-100">Disfruta de un verano sin interrupciones</h2>
+				<p class="max-w-104 leading-tight reveal:translate-y-24 reveal:opacity-0 revealed:delay-200">McDonald’s lanza el reto McAuto con el que se compromete a entregarte tu pedido en un máximo de 2 minutos desde que pagas, so pena de 4 nuggets sino lo consiguen.</p>
+			</div>
+
+			<div class="md:w-276 relative max-md:-mx-24 md:absolute md:left-40 md:top-2 xl:left-84">
+				<Image src={imgHighway01} width={1656} alt="" quality={100} />
+				<Icon class="auto-1 absolute right-[27%] top-[30%] w-[3%]" name="auto" />
+				<Icon class="auto-2 absolute left-[48.5%] top-[75%] w-[3%]" name="auto" />
+			</div>
+
+			<div class="reveal mt-8 max-w-108 md:mt-20">
+				<div class="relative -mb-16 ml-auto max-w-64 reveal:translate-y-24 reveal:opacity-0 md:-mb-28">
+					<span class="absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-2xl bg-current"></span>
+					<div class="rounded-2xl border-2 border-current bg-white p-6 leading-tight">
+						<p>Imagina esto: estás en la playa, con arena hasta en las orejas, y de repente tu estómago ruge como si fuera Chewbacca. ¿La solución? Ya no es sacudirte la arena y buscar desesperadamente un chiringuito. McDonald’s ha decidido ponerse las zapatillas de running y venir a ti.</p>
+					</div>
+				</div>
+				<Image class="relative -z-20 size-56 rounded-full object-cover reveal:scale-50 reveal:opacity-0 md:size-80" src={imgCircle01} width={480} alt="" quality={100} />
+			</div>
+
+			<div class="reveal mt-8 max-w-124 md:mt-28">
+				<div class="relative -mb-16 max-w-64 reveal:translate-y-24 reveal:opacity-0 md:-mb-44">
+					<span class="absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-2xl bg-current"></span>
+					<div class="rounded-2xl border-2 border-current bg-white p-6 leading-tight">
+						<p>En un mundo donde hasta tu perro tiene un smartphone, las cadenas de comida rápida han decidido que ya es hora de dejar de vivir en la edad de piedra. McDonald's, el gigante de las hamburguesas que todos conocemos (y algunos aman en secreto), ha decidido liderar esta <strong>revolución de la comida sobre ruedas</strong>.</p>
+					</div>
+				</div>
+				<Image class="relative -z-20 ml-auto size-56 rounded-full object-cover reveal:scale-50 reveal:opacity-0 md:size-80" src={imgCircle02} width={480} alt="" quality={100} />
+			</div>
+
+			<div class="reveal ml-auto mt-8 max-w-120 md:mt-16 lg:-mt-40 xl:mr-24">
+				<Image class="relative -z-20 size-56 rounded-full object-cover reveal:scale-50 reveal:opacity-0 md:size-80" src={imgCircle03} width={480} alt="" quality={100} />
+				<div class="relative -mt-16 ml-auto max-w-64 reveal:translate-y-24 reveal:opacity-0 md:-mt-36">
+					<span class="absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-2xl bg-current"></span>
+					<div class="rounded-2xl border-2 border-current bg-white p-6 leading-tight">
+						<p>El <a class="font-bold text-[#FFBC0D] underline" href="https://mcdonalds.es/landings/mcauto">McAuto</a>, ese invento que nos permite <strong>pedir comida sin despeinarnos</strong> (más de lo que ya estamos después de un día de playa), se está convirtiendo en el mejor amigo del veraneante perezoso. ¿Quién necesita cocinar cuando puedes pasar por el <a class="font-bold text-[#FFBC0D] underline" href="https://mcdonalds.es/landings/mcauto">McAuto</a> de camino a casa y fingir que has estado horas frente a los fogones?.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="relative -mb-16 -ml-36 -mt-8 w-184 max-w-none md:-ml-88 md:-mt-44 md:mb-0 md:w-[92rem] lg:-ml-36">
+				<Image src={imgHighway02} width={2208} alt="" quality={100} />
+				<Icon class="auto-3 absolute left-[57%] top-[57%] w-[2.5%]" name="auto" />
+			</div>
+
+			<div class="reveal mx-auto max-w-180 md:-mt-40">
+				<div class="relative max-w-164 reveal:translate-y-24 reveal:opacity-0">
+					<span class="absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-2xl bg-current"></span>
+					<div class="rounded-2xl border-2 border-current bg-white p-6 leading-tight md:px-12 md:py-8 md:text-[2rem]">
+						<p>Cuando cae la noche y el hambre ataca, McDonald’s se presenta como el superhéroe de las cenas tardías.</p>
+					</div>
+				</div>
+				<Image class="relative -mr-16 -mt-12 ml-auto w-68 reveal:translate-x-24 reveal:opacity-0 md:-mt-20" src={imgItem01} width={408} alt="" quality={100} />
+			</div>
+		</div>
+
+		<div class="container relative">
+			<Icon class="absolute left-0 top-40 w-full" name="map" />
+		</div>
+
+		<div class="container relative z-10 pb-24">
+			<div class="reveal mt-8 max-w-104">
+				<div class="relative max-w-64 reveal:translate-y-24 reveal:opacity-0">
+					<span class="absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-2xl bg-current"></span>
+					<div class="rounded-2xl border-2 border-current bg-white p-6 leading-tight">
+						<p>Pero espera, que hay más. La <strong>app de McDonald's</strong> se ha puesto tan lista que casi puede leer tu mente. <strong>Con su función MyOrder, puedes repetir ese pedido</strong> que hiciste hace tres meses en un ataque de hambre nocturno. ¿Recuerdas esa hamburguesa con extra de todo? Pues ahora está a un clic de distancia. Es como tener un mayordomo en tu bolsillo, pero en lugar de servirte el té, te trae Big Macs.</p>
+					</div>
+				</div>
+				<Image class="relative -mt-24 ml-auto w-52 reveal:translate-x-24 reveal:opacity-0 max-md:-mr-16" src={imgItem02} width={480} alt="" quality={100} />
+			</div>
+
+			<div class="reveal ml-auto max-w-128 md:mt-16 lg:-mt-72">
+				<Image class="relative -z-20 size-56 rounded-full object-cover reveal:scale-50 reveal:opacity-0 md:size-80" src={imgCircle04} width={480} alt="" quality={100} />
+				<div class="relative -mt-16 ml-auto max-w-64 reveal:translate-y-24 reveal:opacity-0 md:-mt-48">
+					<span class="absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-2xl bg-current"></span>
+					<div class="rounded-2xl border-2 border-current bg-white p-6 leading-tight">
+						<p>Pero McDonald's no se conforma con salvarte de cocinar después de un día de playa. Oh, no. También quiere ser <strong>tu compañero de viaje</strong> en esas excursiones veraniegas donde el GPS te lleva por caminos de cabras. Un <a class="font-bold text-[#FFBC0D] underline" href="https://mcdonalds.es/landings/mcauto">McAuto</a> estratégicamente ubicado puede ser el oasis en medio de ese desierto de aburrimiento que son las autopistas.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="relative mt-4 w-104 max-w-none md:ml-72 md:w-212 xl:ml-96">
+				<Image src={imgHighway03} width={1272} alt="" quality={100} />
+			</div>
+
+			<div class="reveal mt-8 md:-mt-96 xl:ml-24">
+				<div class="relative max-w-64 reveal:translate-y-24 reveal:opacity-0">
+					<span class="absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-2xl bg-current"></span>
+					<div class="rounded-2xl border-2 border-current bg-white p-6 leading-tight">
+						<p>Y cuando cae la noche y el hambre ataca, McDonald's se presenta como el superhéroe de las cenas tardías. <strong>"Las noches de verano saben mejor con McAuto"</strong>, dicen. Esta revolución en la forma de pedir comida rápida no es solo cuestión de conveniencia. Es el sueño húmedo de cualquier perezoso hecho realidad. Es poder disfrutar de la playa hasta el último rayo de sol sin preocuparse por la cena. Es la libertad de improvisar un viaje por carretera sin miedo a morir de hambre en medio de la nada.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="reveal mt-8 items-start justify-end md:mt-24 md:flex lg:mr-36">
+				<Image class="relative w-52 self-end reveal:-translate-x-24 reveal:opacity-0 max-md:-mb-16 max-md:ml-auto md:-mr-12" src={imgItem03} width={480} alt="" quality={100} />
+				<Image class="relative -z-20 -mr-8 size-56 rounded-full object-cover reveal:scale-50 reveal:opacity-0 md:size-80" src={imgCircle05} width={480} alt="" quality={100} />
+				<div class="relative max-w-64 reveal:translate-y-24 reveal:opacity-0 max-md:-mt-16 max-md:ml-auto md:mb-16">
+					<span class="absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-2xl bg-current"></span>
+					<div class="rounded-2xl border-2 border-current bg-white p-6 leading-tight">
+						<p>Claro, algunos dirán que esto es el fin de la cocina casera, que estamos criando una generación que no sabrá ni freír un huevo. Pero seamos realistas, ¿quién quiere cocinar cuando hace un calor que derretiría hasta a un pingüino? Al final, esta nueva forma de pedir comida rápida es como tener un genio de la lámpara, pero en lugar de tres deseos, te concede hamburguesas ilimitadas. Y aunque puede que no sea la solución a todos los problemas del mundo, al menos resolverá ese dilema eterno de <strong>"¿qué cenamos hoy?"</strong>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="reveal overflow-clip bg-[#FFBC0D]">
+			<div class="container py-24 reveal:translate-y-24 reveal:opacity-0">
+				<h3 class="mx-auto max-w-3xl text-center text-xl font-bold md:text-3xl">Así que la próxima vez que estés de vacaciones y el hambre apriete, recuerda: tu smartphone ya no es solo para hacer selfies en la playa. Ahora también es tu pasaporte a un mundo donde la comida viene a ti, y no al revés. Bienvenidos al futuro de la comida rápida, donde las hamburguesas casi tienen GPS propio.</h3>
+			</div>
+		</div>
+
+		<div>
+			<Icon class="mx-auto w-64" name="wave" />
+			<div class="container py-12 text-center">
+				<p>ElTiempo Content para</p>
+				<Icon class="mx-auto mt-4 w-16" name="mcdonalds" />
+			</div>
+		</div>
+	</main>
+
+	<div class="fixed right-4 top-12 z-50 w-32 origin-top-right text-center max-md:scale-75 lg:right-8 lg:top-20">
+		<Icon name="crono" />
+		<span id="timer1" class="absolute inset-x-0 top-12 font-black leading-none text-black">2:00</span>
+		<span id="timer2" class="absolute inset-x-0 bottom-[2.3rem] -mr-[.1rem] font-black leading-none text-black">2</span>
+	</div>
+</Layout>
+
+<script>
+	const timer1 = document.getElementById('timer1')
+	const timer2 = document.getElementById('timer2')
+	let count = 120
+	const interval = setInterval(() => {
+		const min = Math.floor(count / 60).toString()
+		const seg = (count % 60).toString().padStart(2, '0')
+		count--
+		if (timer1 && timer2) {
+			timer1.textContent = `${min}:${seg}`
+			timer2.textContent = count < 0 ? '0' : count < 60 ? '1' : '2'
+		}
+		if (count < 0) clearInterval(interval)
+	}, 1000)
+</script>

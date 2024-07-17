@@ -1,0 +1,15 @@
+---
+interface Props {
+	bgColor?: 'bg-white' | 'bg-neutral-800' | 'bg-stone-300'
+	bgImage?: 'bg-img-texture' | 'bg-img-people' | 'bg-img-car'
+	minHScreen?: boolean
+}
+
+const { bgColor = 'bg-white', bgImage, minHScreen } = Astro.props
+---
+
+<section class:list={['relative overflow-clip', bgColor, bgImage, bgImage && 'bg-cover bg-center', bgColor === 'bg-neutral-800' && 'text-white']}>
+	<div class:list={['container py-24 xl:py-32', minHScreen && 'lg:flex lg:min-h-screen']}>
+		<slot />
+	</div>
+</section>

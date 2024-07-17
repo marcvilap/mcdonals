@@ -1,0 +1,31 @@
+---
+import Container from '$components/Container.astro'
+import Icon from '$components/Icon.astro'
+
+const links = [
+	{ title: 'Otoño en el Montsen', link: '' },
+	{ title: 'Verano en la Costa Brava', link: '' },
+]
+---
+
+<Container bgColor="bg-stone-300" bgImage="bg-img-texture">
+	<div class="reveal text-center">
+		<p class="mx-auto max-w-2xl text-center text-2xl reveal:translate-y-12 reveal:opacity-0">
+			Los dos platos del verano de los Hermanos Torres son más que simples recetas; son una <strong>invitación a redescubrir la belleza y el sabor de lo local</strong>. En cada bocado, podemos sentir la frescura de las flores del Tibidabo, el sabor del mar de los mejillones de Barcelona y el compromiso con una cocina que respeta y celebra la riqueza de su entorno.
+		</p>
+	</div>
+
+	<div class="mb-24 mt-12 flex flex-wrap justify-center gap-x-6 gap-y-3">
+		{
+			links.map(({ title, link }) => (
+				<a class="border border-neutral-800 px-6 py-3 transition-colors hover:bg-neutral-800 hover:text-white" target="_blank" href={link}>
+					{title}
+				</a>
+			))
+		}
+	</div>
+
+	<p class="mb-3 text-center">ElTiempo Content para</p>
+
+	<Icon class="mx-auto -mb-12 w-40" name="lexus" />
+</Container>
