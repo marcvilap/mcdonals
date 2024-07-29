@@ -10,6 +10,7 @@ export default {
 			transitionDuration: { DEFAULT: '300ms' },
 			fontFamily: {
 				sans: ['Air', 'sans-serif'],
+				speedee: ['speedee', 'sans-serif'],
 			},
 			spacing: Object.fromEntries([...Array(70).keys()].slice(17).map(val => [val * 4, `${val}rem`])),
 			colors: {
